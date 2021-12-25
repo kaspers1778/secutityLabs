@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>SignUp</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        form, h3 {
+            margin-left: 40px;
+        }
+
+        button {
+            margin-right: 80px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1>Personal cabinet</h1>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+
+            <td>
+                {{.Name}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+
+            <td>
+                {{.Number}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Favorite color:
+            </td>
+            <td>
+                {{.Color}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button formaction="/login" formmethod="post">Sign out</button>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

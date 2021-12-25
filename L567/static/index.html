@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>MembersClub</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        form, h3 {
+            margin-left: 40px;
+        }
+
+        button {
+            margin-right: 80px;
+        }
+
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1>Log in page</h1>
+    <table>
+        <tr>
+            <td>
+                Name:
+            </td>
+
+            <td>
+                <input type="text" name="Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+
+            <td>
+                <input type="password" name="Password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <button formaction="/pcabinet" formmethod="post">Log in</button>
+                <button formaction="/signup" formmethod="post">Sign up</button>
+            </td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            {{with .Login}}
+            <td><font color="red">{{ . }}</font></td>
+            {{ end }}
+        </tr>
+    </table>
+</form>
+</body>
+</html>
